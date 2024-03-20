@@ -200,6 +200,14 @@ Navbar
     background:var(--clr-primary-3);
     padding-right: 2.25rem;
 }
+.nav-links{
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.show-links{
+    height: 280px;
+}
 /*
 ===============
 Hero
@@ -548,4 +556,46 @@ Footer
 }
 .copyright{
     color: var(--clr-white);
+}
+@media screen and (min-width: 992px) {
+    .navbar{
+        padding: 1rem 2rem;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .navbar-center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-header{
+        padding: 0 0;
+    }
+    .nav-link{
+        padding: 0 0;
+        margin-right:0.75rem;
+    }
+    .nav-link:hover{
+        padding: 0 ;
+        color:var(--clr-primary-2);
+        background: transparent;
+    }
+    .nav-links{
+        height: auto;
+        display: flex;
+
+    }
+    .nav-icons{
+        display:flex ;
+    }
+    .nav-icon{
+        color: var(--clr-primary-2);
+        font-size: 1.2rem;
+        margin-right: 0.75rem;
+    }
+    .nav-icon:hover{
+        color:var(--clr-primary-3);
+    }
+
 }
